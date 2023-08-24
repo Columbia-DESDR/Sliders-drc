@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="modulepreload" href="./internal/immutable/entry/start.6b0a2e6d.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/index.6651d26c.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/singletons.04faf63d.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/index.4f67b53c.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/paths.663ed0f0.js">
+		<link rel="modulepreload" href="./internal/immutable/entry/app.dbb83717.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/preload-helper.41c905a7.js">
+	</head>
+	<body data-sveltekit-prefetch>
+		<div>
+			<script>
+				{
+					__sveltekit_1vyd2ny = {
+						assets: "/desdr-drc",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./internal/immutable/entry/start.6b0a2e6d.js"),
+						import("./internal/immutable/entry/app.dbb83717.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
